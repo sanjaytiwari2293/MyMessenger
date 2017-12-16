@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanja.mymessenger.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_img">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginTop="113dp"
+            android:id="@+id/editTextEmailLogin"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/editTextEmailLogin"
+            android:layout_alignEnd="@+id/editTextEmailLogin"
+            android:layout_marginTop="34dp"
+            android:id="@+id/editTextPasswordLogin"
+            android:hint="Password" />
+
+        <Button
+            android:text="Log In"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPasswordLogin"
+            android:layout_alignStart="@+id/editTextPasswordLogin"
+            android:layout_marginTop="34dp"
+            android:id="@+id/buttonLogin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/button_border"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:text="Sign Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonLogin"
+            android:layout_alignEnd="@+id/editTextPasswordLogin"
+            android:id="@+id/buttonSignup"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/button_border"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light" />
+
+
+        <TextView
+            android:text="or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/googleSignIn"
+            android:padding="2dp"
+            android:background="#2371f9"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"></com.google.android.gms.common.SignInButton>
+
+    </RelativeLayout>
+</FrameLayout>

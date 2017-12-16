@@ -1,0 +1,182 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanja.mymessenger.AccountBlankFragment"
+    android:visibility="visible"
+    android:id="@+id/frameLayoutEdit">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/RelativeLayoutEdit">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextEditLName"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignStart="@+id/editTextEditFName" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextEditUName"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignStart="@+id/editTextEditLName" />
+
+            <TextView
+                android:text="Last Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/editTextEditFName"
+                android:layout_alignStart="@+id/textView2" />
+
+            <TextView
+                android:text="Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/editTextEditLName"
+                android:layout_alignStart="@+id/textView4" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="1.5dp">
+
+                <Button
+                    android:text="Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonEditCancel"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/editText3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:background="#2371f9"
+                    android:textSize="18sp"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp" />
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/button2"
+                    android:layout_alignStart="@+id/textView5"
+                    android:id="@+id/buttonEditSave"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:background="#2371f9"
+                    android:textSize="18sp"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="410dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radioGroupEdit"
+                android:layout_below="@+id/editTextEditUName"
+                android:layout_alignStart="@+id/editTextEditUName"
+                android:layout_marginTop="16dp">
+
+                <RadioButton
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:id="@+id/radioButtonEditFemale" />
+
+                <RadioButton
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonEditMale"
+                    android:layout_weight="13.13"
+                    android:layout_margin="2dp" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextEditFName"
+                android:layout_marginStart="39dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:text="First Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/default_pic"
+                    android:id="@+id/imageViewEditProfilePic"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="51dp"
+                    app:srcCompat="@android:drawable/ic_menu_edit"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="bottom|center"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="70dp" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

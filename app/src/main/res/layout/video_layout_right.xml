@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:background="@drawable/border"
+        android:layout_height="265dp"
+        android:layout_gravity="right"
+        android:backgroundTint="#bbb0cbff"
+        android:layout_marginBottom="1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/black_tick"
+            android:id="@+id/imageViewTickVideoR"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/delete1"
+            android:id="@+id/imageButtonDelVidRight"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_height="50dp"
+            android:layout_marginLeft="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewSenderNameVideoR"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/imageViewPlayVideoR"
+            android:layout_alignStart="@+id/imageViewPlayVideoR"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/video_play1"
+            android:id="@+id/imageViewPlayVideoR"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewTimeVideoR"
+            android:layout_alignBaseline="@+id/txtViewSenderNameVideoR"
+            android:layout_alignBottom="@+id/txtViewSenderNameVideoR"
+            android:layout_alignEnd="@+id/imageViewPlayVideoR"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

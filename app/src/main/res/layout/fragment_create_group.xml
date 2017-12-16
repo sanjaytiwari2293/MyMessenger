@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanja.mymessenger.CreateGroupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b7c8f9">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2371f9">
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="74dp"
+                app:srcCompat="@drawable/gallery2"
+                android:id="@+id/imageViewGroupPic"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_margin="2dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextNewGrpTitle"
+                android:layout_weight="1"
+                android:hint="group title"
+                android:layout_gravity="center"
+                android:textColor="@color/cardview_light_background" />
+
+            <Button
+                android:text="Create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:id="@+id/buttonNewGrpCreate"
+                android:layout_weight="0.05"
+                android:textColor="@color/cardview_light_background"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:layout_margin="2dp"
+                android:layout_marginRight="2dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerViewCreateGrp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:background="@color/cardview_light_background" />
+
+    </RelativeLayout>
+
+</FrameLayout>

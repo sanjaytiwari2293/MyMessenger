@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit"
+        android:orderInCategory="100"
+        android:title="Edit Profile"/>
+
+    <item
+        android:id="@+id/showReq"
+        android:orderInCategory="100"
+        android:title="Show Friend Requests"/>
+
+
+    <item
+        android:id="@+id/createTrip"
+        android:orderInCategory="100"
+        android:title="Create Trip"/>
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"/>
+
+
+
+</menu>
+

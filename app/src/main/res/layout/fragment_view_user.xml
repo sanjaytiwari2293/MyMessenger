@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanja.mymessenger.ViewUserFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/default_pic"
+            android:layout_marginTop="22dp"
+            android:id="@+id/imageViewViewPic1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewViewPic1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:id="@+id/textViewViewUserName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewViewUserName"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:text="Add Friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewViewUserName"
+                android:layout_toEndOf="@+id/textViewViewUserName"
+                android:id="@+id/buttonViewUserAddFriend"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_weight="1"
+                android:background="#2371f9"
+                android:layout_margin="1dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonViewUserSendMsg"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:background="#2371f9"
+                android:layout_margin="1dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

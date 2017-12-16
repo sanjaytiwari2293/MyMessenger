@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:background="@drawable/border"
+        android:layout_height="265dp"
+        android:layout_marginBottom="1dp">
+
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewSenderNameImageLeft"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageViewImageLeft"
+            android:layout_marginBottom="16dp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_light"
+            android:id="@+id/imageViewImageLeft"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imageButtonImageLeft"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/delete1"
+            android:id="@+id/imageButtonImageLeft"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_height="50dp"
+            android:layout_marginRight="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewTime1ImageLeft"
+            android:layout_alignBaseline="@+id/txtViewSenderNameImageLeft"
+            android:layout_alignBottom="@+id/txtViewSenderNameImageLeft"
+            android:layout_alignEnd="@+id/imageViewImageLeft"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

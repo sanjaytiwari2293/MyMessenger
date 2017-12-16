@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    android:minHeight="200dp"
+    android:minWidth="200dp"
+    android:gravity="center">
+
+    <TextView
+        android:text="What do you want to do?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:layout_margin="3dp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/gallery2"
+                android:id="@+id/imageButtonChooseNewPic"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.31"
+                android:layout_margin="2dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/delete2"
+                android:id="@+id/imageButtonDeletePrevPic"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.31"
+                android:layout_margin="2dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

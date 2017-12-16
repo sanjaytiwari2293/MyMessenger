@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/border"
+    android:minHeight="300dp"
+    android:minWidth="300dp"
+    android:padding="10dp">
+
+    <TextView
+        android:text="Type in your status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:gravity="left|center"
+        android:layout_marginBottom="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextNewStat"
+        android:hint="Type.." />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCancelStat"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:background="#2371f9"
+            android:textColor="@color/cardview_light_background"
+            android:padding="2dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonOkStat"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:background="#2371f9"
+            android:textColor="@color/cardview_light_background"
+            android:padding="2dp"
+            android:layout_margin="1dp" />
+    </LinearLayout>
+</LinearLayout>

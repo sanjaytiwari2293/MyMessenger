@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanja.mymessenger.UserAccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:background="#2371f9">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused"
+                android:id="@+id/imageViewProfilePic"
+                android:scaleType="fitCenter"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.27"
+                android:background="@drawable/rect"
+                android:adjustViewBounds="false" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUserName"
+                android:textSize="22sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:id="@+id/imageButtonEdit"
+                android:layout_weight="0.38"
+                android:scaleType="centerInside"
+                android:background="@null" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="87dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMyChats"
+                android:layout_weight="1"
+                android:background="#2371f9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <Button
+                android:text="Groups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMyGroups"
+                android:layout_weight="1"
+                android:background="#2371f9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <Button
+                android:text="Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonStatus"
+                android:layout_weight="1"
+                android:background="#2371f9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative3Container"
+        android:layout_marginTop="137dp"
+        android:gravity="top|center">
+
+    </RelativeLayout>
+
+</FrameLayout>

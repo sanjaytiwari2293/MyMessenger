@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LinearRoot">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.72"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:padding="5dp"
+            app:cardCornerRadius="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons">
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="81dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageViewRowImage"
+                android:layout_weight="0.32"
+                android:layout_margin="3dp"
+                android:padding="2dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewRowName"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="22dp"
+                android:gravity="left|center" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

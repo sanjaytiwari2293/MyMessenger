@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearRootNewGroup">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/rect">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxNewGrp"
+            android:layout_gravity="center"
+            android:scaleX="1.70"
+            android:scaleY="1.70"
+            android:layout_margin="4dp" />
+
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="77dp"
+            app:srcCompat="@drawable/default_pic"
+            android:id="@+id/imageViewRowNewGrp"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRowNewGrp"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_marginBottom="1dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:weightSum="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewLeftMessage"
+                android:layout_weight="0.91"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewLeftSenderName"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewLeftTime"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:gravity="right|center" />
+
+                <ImageButton
+                    android:layout_width="44dp"
+                    android:layout_height="29dp"
+                    app:srcCompat="@drawable/del_message"
+                    android:id="@+id/imageButtonDelMsgLeft1"
+                    android:scaleType="fitCenter"
+                    android:background="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9" />
+
+    </LinearLayout>
+</LinearLayout>

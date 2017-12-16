@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanja.mymessenger.SignupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Sign Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonCancelSignup"
+            android:layout_alignEnd="@+id/editTextRepeatPass"
+            android:id="@+id/buttonSignupSignup"
+            android:background="#1c67ea"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2LName"
+            android:hint="Last Name"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_alignStart="@+id/editTextFirstName"
+            android:layout_marginTop="15dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2LName"
+            android:orientation="horizontal"
+            android:layout_alignStart="@+id/editTextEmailSignup"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radioGroup"
+            android:layout_alignEnd="@+id/editTextEmailSignup">
+
+            <RadioButton
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonFemale"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/radioButtonMale" />
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/editTextUsername"
+            android:hint="Username" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextEmailSignup"
+            android:hint="Email"
+            android:layout_below="@+id/editTextUsername"
+            android:layout_alignStart="@+id/editTextUsername"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editTextPassSignup"
+            android:hint="Choose Password"
+            android:layout_below="@+id/editTextEmailSignup"
+            android:layout_alignStart="@+id/editTextEmailSignup"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editTextRepeatPass"
+            android:hint="Repeat Password"
+            android:layout_below="@+id/editTextPassSignup"
+            android:layout_alignStart="@+id/editTextPassSignup"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCancelSignup"
+            android:layout_below="@+id/editTextRepeatPass"
+            android:layout_alignStart="@+id/editTextRepeatPass"
+            android:layout_marginTop="30dp"
+            android:background="#1c67ea"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextFirstName"
+            android:hint="First Name"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_marginTop="22dp" />
+
+    </RelativeLayout>
+</FrameLayout>
